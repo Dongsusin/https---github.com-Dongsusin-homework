@@ -1,0 +1,31 @@
+:root {
+  --text-color: #121212;
+}
+body {
+  font-size: 16px;
+  color: var(--text-color);
+  background: var(--white);
+}
+.login-page-wrap {
+  padding-inline: 1.25rem;
+  padding-block: 4.375rem 7.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2.8125rem;
+
+  @media (min-width: 768px) {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+.default-form,
+.login-btn-form {
+  input {
+    height: 2.8125rem;
+  }
+}
+
+.login-checkbox-form {
+  gap: 0.3125rem;
+}
